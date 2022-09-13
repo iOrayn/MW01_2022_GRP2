@@ -1,0 +1,44 @@
+body{
+    display: grid;
+    width: 100%;
+    margin: 0px;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "section aside"
+                         "footer footer";
+                         grid-template-rows: 80px 40px minmax(400px, auto) auto;
+                         grid-template-columns: 1fr 25% ;
+}
+
+header{
+    grid-area: header;
+    background-color: cornflowerblue;
+}
+nav{
+    grid-area: nav;
+    background-color: cornflowerblue;
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(255, 255, 255);
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(255, 255, 255);
+}
+
+footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+}
+
+.bordureTest{
+        /*border: 1px solid gray;*/
+}
+
+.sectionImg{
+    width: 50em;
+    float: left;
+}   
